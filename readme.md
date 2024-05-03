@@ -50,7 +50,7 @@
 
 1. Install the dependencies
    ```bash
-   > npm install
+   > pnpm install
    ```
 2. Add the environment variables referring to `.env.example` add the backend url and add `/api` at end
    ```bash
@@ -59,7 +59,7 @@
 3. Run the frontend project
 
    ```bash
-   > npm run dev
+   > pnpm run dev
    ```
 
 ## API Documentation
