@@ -112,9 +112,10 @@ const Home = () => {
                     </button>
                     <button
                       onClick={() => {
-                        const confirm = alert(
+                        const confirm = window.confirm(
                           "Are you sure you want to delete this comment?"
                         );
+                        console.log(confirm);
                         if (confirm) {
                           deleteComment(comment.id);
                         }
