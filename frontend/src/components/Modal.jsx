@@ -13,8 +13,8 @@ const Modal = ({
 }) => {
   return (
     <>
-      <div onClick={() => setModalOpen(true)}>
-        <button className=" hover:cursor-pointer">Add new comment</button>
+      <div className="w-full flex justify-center" onClick={() => setModalOpen(true)}>
+        <button className=" hover:cursor-pointer bg-blue-600 text-white rounded-md p-2 px-5">Add new comment</button>
       </div>
       {modalOpen && (
         <div className=" absolute w-screen h-screen grid inset-0 bg-black bg-opacity-30 backdrop-blur-sm justify-center items-center">

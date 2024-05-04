@@ -94,8 +94,8 @@ const Home = () => {
       <div className=" mt-8">
         <h1 className=" text-2xl font-bold">Comments</h1>
         <div className=" mt-4">
-          {!fetching &&
-            comments.length > 0 &&
+          {(!fetching &&
+            comments.length > 0) ?
             comments?.map((comment) => (
               <div key={comment.id}>
                 <h3 className=" font-bold">{comment.title}</h3>
@@ -126,8 +126,9 @@ const Home = () => {
                     </button>
                   </div>
                 </div>
+                <hr />
               </div>
-            ))}
+            )): fetching ? <p className="my-4">Loading...</p> : <p className=" my-4">No comments found</p>}
           <Modal
             modalOpen={modalOpen}
             setModalOpen={setModalOpen}
